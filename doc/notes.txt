@@ -1,0 +1,10 @@
+== Introduction
+- definition: giving computer ability to learn without programming them
+- Samuel 1959
+- Tom Mitchell 81998( A computer program is said to learn from experience E with respect to some task T abd some performance measure P, if its performance on T, as measured by P, improves with experience E.
+
+
+== Supervised learning
+- "right answers" given - Regression: produce continuous values
+= Classification: discrete values
+- 
