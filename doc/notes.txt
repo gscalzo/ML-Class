@@ -6,5 +6,18 @@
 
 == Supervised learning
 - "right answers" given - Regression: produce continuous values
-= Classification: discrete values
-- 
+- Classification: discrete values
+- It's given if an answer is right
+
+== Unsupervised learning
+- not given right answer
+- find a cluster (google news(
+- organize datacenter, social network, market segmentation
+
+== Linear Regression Univariate (one variable)
+- m: number of training (set of given results)
+- x: features
+- y: output
+- (xi, yi) ith traning value
+- h: (hypothesis) y = h(x)
+-                           
