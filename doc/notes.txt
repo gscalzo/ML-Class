@@ -20,4 +20,15 @@
 - y: output
 - (xi, yi) ith traning value
 - h: (hypothesis) y = h(x)
--                           
+== Cost function
+- minimization: create a linear function given a dataset
+- cost function = squared error function 1/2m sum(1,m)(h(xi) - yi)2
+= Cost function intuition 
+- find theta0 and theta1 so that the sum of the error with y of dataset is minimum
+- Contour plots or Contour figure
+- the points on same ellipse have the same value of J for theta0, theta1
+== Gradient Descent
+- algorithm to find minimum for Cost function
+- start from a point than look around to find the steepest descent and go on with this
+- depending from the starting poit youĺl go into different local optimum
+- 
