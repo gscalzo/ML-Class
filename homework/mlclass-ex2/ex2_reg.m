@@ -66,7 +66,7 @@ lambda = 1;
 % Compute and display initial cost and gradient for regularized logistic
 % regression
 [cost, grad] = costFunctionReg(initial_theta, X, y, lambda);
-disp(grad);
+%disp(grad);
 
 fprintf('Cost at initial theta (zeros): %f\n', cost);
 

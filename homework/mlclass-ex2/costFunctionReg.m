@@ -30,13 +30,10 @@ end
 
 for j = 2:size(theta)(1),
  for i = 1:m,
-   grad(j) = grad(j) + 1/m*((sigmoid(X(i,:)*theta) - y(i))*X(i,j)+lambda*theta(j));
+   grad(j) = grad(j) + 1/m*(sigmoid(X(i,:)*theta) - y(i))*X(i,j);
  end
+   grad(j) = grad(j) +lambda/m*theta(j);
 end
-
-
-
-
 
 
 
