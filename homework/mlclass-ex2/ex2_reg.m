@@ -66,6 +66,7 @@ lambda = 1;
 % Compute and display initial cost and gradient for regularized logistic
 % regression
 [cost, grad] = costFunctionReg(initial_theta, X, y, lambda);
+disp(grad);
 
 fprintf('Cost at initial theta (zeros): %f\n', cost);
 
@@ -87,7 +88,7 @@ pause;
 initial_theta = zeros(size(X, 2), 1);
 
 % Set regularization parameter lambda to 1 (you should vary this)
-lambda = 1;
+lambda = 10;
 
 % Set Options
 options = optimset('GradObj', 'on', 'MaxIter', 400);
