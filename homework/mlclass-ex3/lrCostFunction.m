@@ -35,7 +35,15 @@ grad = zeros(size(theta));
 %           temp(1) = 0;   % because we don't add anything for j = 0  
 %           grad = grad + YOUR_CODE_HERE (using the temp variable)
 %
+%  http://www.ml-class.org/course/qna/view?id=1626
+%  http://www.ml-class.org/course/qna/view?id=2050
+n_1 = size(theta)(1);
+thetar = eye(n_1);
+thetar(1,1) = 0;
+thetar = thetar*theta;
 
+J = -1/m*(y'*log(sigmoid(X*theta)) + (1-y)'*log(1-sigmoid(X*theta)))+lambda/(2*m)*thetar'*thetar;
+grad = 1/m*(X'*(sigmoid(X*theta) - y))+lambda/m*thetar;
 
 
 
